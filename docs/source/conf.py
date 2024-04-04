@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Parul_na_Python'
+project = 'Пароль на Python'
 copyright = '2024, JV&LN'
 author = 'JV&LN'
 
