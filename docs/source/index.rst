@@ -18,14 +18,8 @@ Cоздание безопасного менеджера паролей с по
 .. image:: /_static/logo.jpeg
    :alt: Логотип
 
-.. video:: /_static/kandinsky-video-1712408826588.mp4
+.. image:: /_static/logo.gif
    :alt: Гифка
-.. py:function:: youtube.get_video(video_url="https://www.youtube.com/shorts/Kv1TdJGu4ME")
-
-   
-   :param str video_url: Video url whose information need to be fetched
-   :return: {'Title': 'Title', 'Publish_Date': 'Publish_Date', 'Subscribers': 'Subscribers', 'Desc': 'Desc', 'Views': 'Views', 'DisLikes': 'DisLikes', 'Comments': 'Comments', 'ChannelLink': 'ChannelLink', 'Duration': 'Duration', 'Likes': 'Likes', 'ChannelName': 'ChannelName'}
-   :rtype: dict
 
 --------
 
