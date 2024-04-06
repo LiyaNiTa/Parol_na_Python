@@ -18,6 +18,9 @@ Cоздание безопасного менеджера паролей с по
 .. image:: /_static/logo.jpeg
    :alt: Логотип
 
+.. video:: kandinsky-video-1712408826588.mp4
+   :alt: Логотип
+
 .. py:function:: youtube.get_video(video_url="https://www.youtube.com/shorts/Kv1TdJGu4ME")
 
    
