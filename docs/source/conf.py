@@ -1,5 +1,7 @@
 # Configuration file for the Sphinx documentation builder.
-
+# Exclude base script files (the theme uses its own)
+from sphinx.builders.html import StandaloneHTMLBuilder
+StandaloneHTMLBuilder.script_files = []
 # -- Project information
 
 project = 'Пароль на Python'
