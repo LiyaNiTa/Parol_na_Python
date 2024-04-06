@@ -17,6 +17,11 @@ Cоздание безопасного менеджера паролей с по
 
 .. py:function:: youtube.get_video(video_url="https://www.youtube.com/shorts/Kv1TdJGu4ME")
 
+   
+   :param str video_url: Video url whose information need to be fetched
+   :return: {'Title': 'Title', 'Publish_Date': 'Publish_Date', 'Subscribers': 'Subscribers', 'Desc': 'Desc', 'Views': 'Views', 'DisLikes': 'DisLikes', 'Comments': 'Comments', 'ChannelLink': 'ChannelLink', 'Duration': 'Duration', 'Likes': 'Likes', 'ChannelName': 'ChannelName'}
+   :rtype: dict
+
 --------
 
 .. toctree::
