@@ -29,6 +29,12 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 html_static_path = ['_static']
+
+StandaloneHTMLBuilder.supported_image_types = [
+'image/svg+xml',
+'image/gif',
+'image/png',
+'image/jpeg']
 html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
