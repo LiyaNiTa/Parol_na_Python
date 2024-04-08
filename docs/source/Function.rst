@@ -100,21 +100,20 @@ cryptography.fernet: Являясь частью библиотеки cryptograp
 
 .. code-block:: python
 
-
-def login(username, entered_password):
-   try:
-       with open('user_data.json', 'r') as file:
-           user_data = json.load(file)
-       stored_password_hash = user_data.get('master_password')
-       entered_password_hash = hash_password(entered_password)
-       if entered_password_hash == stored_password_hash and username == user_data.get('username'):
-           print("\n[+] Login Successful..\n")
-       else:
-           print("\n[-] Invalid Login credentials. Please use the credentials you used to register.\n")
-           sys.exit()
-   except Exception:
-       print("\n[-] You have not registered. Please do that.\n")
-       sys.exit()
+   def login(username, entered_password):
+      try:
+          with open('user_data.json', 'r') as file:
+              user_data = json.load(file)
+          stored_password_hash = user_data.get('master_password')
+          entered_password_hash = hash_password(entered_password)
+          if entered_password_hash == stored_password_hash and username == user_data.get('username'):
+              print("\n[+] Login Successful..\n")
+          else:
+              print("\n[-] Invalid Login credentials. Please use the credentials you used to register.\n")
+              sys.exit()
+      except Exception:
+          print("\n[-] You have not registered. Please do that.\n")
+          sys.exit()
 
 
 Далее идет функция просмотра сайтов, сохраненных в менеджере паролей. При этом порядок записи функций не имеет особого значения. Важно в каком порядке мы их будем вызывать, (например, нельзя сохранить пароль пользователю который не имеет логин и т.д.):
@@ -137,19 +136,19 @@ def login(username, entered_password):
 
 .. code-block:: python
 
-def get_key(self):
-        # Load or generate the encryption key.
-        key_filename = 'encryption_key.key'
-        if os.path.exists(key_filename):
-            with open(key_filename, 'rb') as key_file:
-                key = key_file.read()
-        else:
-            key = self.generate_key()
-            with open(key_filename, 'wb') as key_file:
-                key_file.write(key)
-
-        cipher = self.initialize_cipher(key)
-        return cipher
+   def get_key(self):
+           # Load or generate the encryption key.
+           key_filename = 'encryption_key.key'
+           if os.path.exists(key_filename):
+               with open(key_filename, 'rb') as key_file:
+                   key = key_file.read()
+           else:
+               key = self.generate_key()
+               with open(key_filename, 'wb') as key_file:
+                   key_file.write(key)
+   
+           cipher = self.initialize_cipher(key)
+           return cipher
 
 .. autosummary::
    :toctree: generated
