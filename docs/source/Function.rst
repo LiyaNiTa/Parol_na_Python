@@ -150,6 +150,8 @@ cryptography.fernet: Являясь частью библиотеки cryptograp
            cipher = self.initialize_cipher(key)
            return cipher
 
+
+По сути, эта функция проверяет, существует ли файл encryption_key.key. Если существует, то он загружает его для использования. Если нет, он создает его и сохраняет в нем наш уникальный ключ. 
 .. autosummary::
    :toctree: generated
 
